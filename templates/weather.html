@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>{{title}}</title>
+        <style>
+            table{
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            td, th{
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even){
+                background-color: #dddddd;
+            }
+
+            #Weather{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+        </style>
+
+    </head>
+    <body>
+
+
+        
+
+
+        <table>
+            <tr>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Temperature</th> 
+                <th>Humidity</th> 
+                <th>Wind</th>   
+            </tr> 
+            
+            <tr>
+                <td>{{ date["date"] }}</td>
+                <td>{{ time["time"] }}</td>
+                <td>{{ data["main"]["temp"] }}°C</td>
+                <td>{{ data["main"]["humidity"] }} %</td>
+                <td>{{ data["wind"]["speed"] }} Km/h</td>
+            
+
+           
+        </table>
+        <div><a href='/'>Go Back
+    </body> 
+</html>
