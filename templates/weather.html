@@ -2,6 +2,9 @@
     <head>
         <title>{{title}}</title>
         <style>
+            body {
+                background-image: url('https://cdn.dribbble.com/users/580699/screenshots/2934892/summer.gif');
+              }
             table{
                 font-family: arial, sans-serif;
                 border-collapse: collapse;
@@ -27,12 +30,10 @@
 
     </head>
     <body>
-        <h1> hello user</h1>
-
-
         
 
-
+        
+        
         <table>
             <tr>
                 <th>Date</th>
@@ -48,10 +49,11 @@
                 <td>{{ data["main"]["temp"] }}°C</td>
                 <td>{{ data["main"]["humidity"] }} %</td>
                 <td>{{ data["wind"]["speed"] }} Km/h</td>
-            
+                
 
-           
-        </table>
-        <div><a href='/'>Go Back
+                
+            </table>
+            <div><a href='/'>Go Back
+            
     </body> 
 </html>

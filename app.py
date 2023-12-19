@@ -42,6 +42,10 @@ def get_weather():
         str(lat)+'&longitude='+str(lon)
     timeCity = urllib.request.urlopen(time_url)
     dateCity = urllib.request.urlopen(time_url)
+    
+    # temp=data["main"]["temp"]
+    # if(temp>=20):
+        
 
     return render_template('weather.html', title='Weather App', date=json.loads(dateCity.read().decode('utf8')), time=json.loads(timeCity.read().decode('utf8')), data=json.loads(data.read().decode('utf8')))
 
